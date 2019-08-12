@@ -1,6 +1,8 @@
 /*
  * LeafNode.h
  *
+ * Leaf node of binary tree.
+ *
  *  Created on: Jul 12, 2019
  *      Author: alex
  */
@@ -17,20 +19,25 @@ class LeafNode : public BinNode<E> {
 private:
 	E value;
 public:
+	// Constructor. Takes node value.
 	LeafNode(const E& val) {
 		value = val;
 	}
 
+	// Default constructor
 	LeafNode() {}
 
+	// Leaves are leaves
 	bool isLeaf() {
 		return true;
 	}
 
+	// Return node value
 	E getVal() {
 		return value;
 	}
 
+	// Traverse
 	void traverse() {
 		cout << "Leaf node: " << getVal() << "\n";
 	}

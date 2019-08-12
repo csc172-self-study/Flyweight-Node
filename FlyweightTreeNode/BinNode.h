@@ -1,6 +1,8 @@
 /*
  * BinNode.h
  *
+ * Abstract base class for binary tree nodes.
+ *
  *  Created on: Jul 12, 2019
  *      Author: alex
  */
@@ -20,6 +22,7 @@ public:
 	static BinNode<E>* nullNode;
 };
 
+// Flyweight for null node
 template <typename E>
 BinNode<E>* BinNode<E>::nullNode = nullptr;
 

@@ -11,10 +11,12 @@
 #include "LeafNode.h"
 
 int main() {
+	// Create two leaves and a root.
 	LeafNode<int>* node1 = new LeafNode<int>(1);
 	LeafNode<int>* node2 = new LeafNode<int>(2);
 	IntNode<int>* root = new IntNode<int>(0, node1, node2);
 
+	// Traverse this (very small) tree.
 	root->traverse();
 }
 
